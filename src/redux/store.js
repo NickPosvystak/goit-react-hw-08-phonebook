@@ -21,7 +21,7 @@ const authConfig = {
   whitelist: ['token'],
 };
 
-export const rootReducer = combineReducers({
+ const rootReducer = combineReducers({
   auth: persistReducer(authConfig, authReducer),
   phonebook: contReduser,
   filter: filterReducer,

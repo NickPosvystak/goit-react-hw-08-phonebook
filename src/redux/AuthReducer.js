@@ -111,6 +111,13 @@ const authSlice = createSlice({
         state.user = action.payload.user;
       })
 
+      // ---------- REFRESH USER ----------------
+      .addCase(refreshThunk.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.authenticated = true;
+        state.user = action.payload;
+      })
+
       //LogOut additional-----
 
       .addCase(logOutThunk.fulfilled, state => {

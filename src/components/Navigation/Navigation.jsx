@@ -19,6 +19,7 @@ const Navigation = () => {
         <>
           <StyledNavLink to="/">Home</StyledNavLink>
           <StyledNavLink to="/contacts">Contacts</StyledNavLink>
+          
           <User />
           <StyledBtn type="button" onClick={onLogOut}>
             Log Out
