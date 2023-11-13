@@ -27,8 +27,8 @@ const Navigation = () => {
         </>
       ) : (
         <>
-          <StyledNavLink to="/login">Login</StyledNavLink>
-          <StyledNavLink to="/register">Register</StyledNavLink>
+          {/* <StyledNavLink to="/login">Login</StyledNavLink> */}
+          {/* <StyledNavLink to="/register">Register</StyledNavLink> */}
         </>
       )}
     </StyledContainer>
