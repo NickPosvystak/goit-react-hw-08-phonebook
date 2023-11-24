@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const StyledList = styled.ul`
+export const StyledDiv = styled.div`
+  background-color: red;
+`;
+
+export const Demo = styled.ul`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -14,9 +18,10 @@ export const StyledItem = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: floralwhite;
+  font-size: 16px;
 
-  padding: 4px 8px;
+  padding: 4px 10px;
   margin-bottom: 15px;
 
   border-radius: 4px;
@@ -27,8 +32,18 @@ export const StyledItem = styled.li`
     transform: translateY(-2px);
   }
 
-  p {
+  /* p {
     margin-left: auto;
     margin-right: 20px;
-  }
+    font-size: 16px;
+    width: 100%;
+    text-align: start;
+  } */
+`;
+export const StyledName = styled.p`
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 16px;
+  width: 100%;
+  text-align: start;
 `;
