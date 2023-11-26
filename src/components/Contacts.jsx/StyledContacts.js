@@ -25,11 +25,13 @@ export const StyledItem = styled.li`
   margin-bottom: 15px;
 
   border-radius: 4px;
-
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 350ms;
   &:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-    transform: translateY(-2px);
+      hsla(240, 7%, 97%, 1) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    transform: translateY(-2px) translateX(6px);
+    transition: 250ms;
   }
 
   /* p {

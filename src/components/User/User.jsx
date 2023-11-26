@@ -8,7 +8,7 @@ export const User = () => {
     
   return (
     <StyledUser>
-          <p>{userItem}</p>  
+          <p>Hello, {userItem}</p>  
     </StyledUser>
   )
 }
