@@ -14,16 +14,19 @@ const Navigation = () => {
     dispatch(logOutThunk());
   };
   return (
-    <StyledContainer>
+    <>
       {authenticated ? (
         <>
+          <StyledContainer>
+
           <StyledNavLink to="/">Home</StyledNavLink>
           <StyledNavLink to="/contacts">Contacts</StyledNavLink>
           
-          <User />
           <StyledBtn type="button" onClick={onLogOut}>
             Log Out
           </StyledBtn>
+          </StyledContainer>
+          <User />
         </>
       ) : (
         <>
@@ -31,7 +34,7 @@ const Navigation = () => {
           {/* <StyledNavLink to="/register">Register</StyledNavLink> */}
         </>
       )}
-    </StyledContainer>
+    </>
   );
 };
 

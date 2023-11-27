@@ -18,13 +18,13 @@ export const StyledNavLink = styled(NavLink)`
   cursor: pointer;
   display: inline-flex;
   font-family: 'JetBrains Mono', monospace;
-  height: 48px;
+  height: 24px;
   justify-content: center;
   line-height: 1;
   list-style: none;
   overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left:  10px;
+  padding-right: 10px;
   position: relative;
   text-align: left;
   text-decoration: none;
@@ -34,7 +34,7 @@ export const StyledNavLink = styled(NavLink)`
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
-  font-size: 16px;
+  font-size: 14px;
 
   margin-left: 5px;
   &:focus {
@@ -51,7 +51,7 @@ export const StyledNavLink = styled(NavLink)`
     margin-right: auto;
   }
 
-  &:active {
+  &.active {
     border: 2px solid white;
   }
 `;
@@ -72,13 +72,13 @@ export const StyledBtn = styled.button`
   cursor: pointer;
   display: inline-flex;
   font-family: 'JetBrains Mono', monospace;
-  height: 48px;
+  height: 24px;
   justify-content: center;
   line-height: 1;
   list-style: none;
   overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
   text-align: left;
   text-decoration: none;
@@ -88,7 +88,7 @@ export const StyledBtn = styled.button`
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
-  font-size: 16px;
+  font-size: 14px;
 
   margin-left: 5px;
   &:focus {

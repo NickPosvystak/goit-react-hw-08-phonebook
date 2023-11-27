@@ -9,7 +9,7 @@ import {
   selectContactsError,
   selectContactsIsLoading,
 } from 'redux/selectors';
-import { StyledTitle } from './ContactsPage.styled';
+import { StyledDiv, StyledTitle } from './ContactsPage.styled';
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
@@ -23,7 +23,7 @@ const ContactsPage = () => {
   }, [dispatch]);
 
   return (
-    <>
+    <StyledDiv>
       <ContactForm />
       <StyledTitle>Contacts</StyledTitle>
 
@@ -36,7 +36,7 @@ const ContactsPage = () => {
       ) : (
         <p>There is no any contacts here yet</p>
       )}
-    </>
+    </StyledDiv>
   );
 };
 
